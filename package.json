@@ -7,9 +7,9 @@
     "node": "17.1.0"
   },
   "scripts": {
-    "start": "node src/index.js",
-    "start-watch": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -18,8 +18,9 @@
     "nodemon": "^2.0.7"
   },
   "dependencies": {
-    "express":"*",
     "body-parser": "^1.19.0",
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "express": "*",
+    "mongose": "^0.0.2-security"
   }
 }
