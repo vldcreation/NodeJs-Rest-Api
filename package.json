@@ -21,6 +21,6 @@
     "body-parser": "^1.19.0",
     "dotenv": "^10.0.0",
     "express": "*",
-    "mongose": "^0.0.2-security"
+    "mongoose": "^6.1.2"
   }
 }
