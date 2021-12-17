@@ -1,1 +1,1 @@
-web: yarn start-watch
+web: nodemon src/index.js
