@@ -3,7 +3,8 @@ let autoIncrement = require('mongoose-auto-increment')
 const server = 'localhost'
 const database = 'userservice'
 
-mongoose.connect(`mongodb+srv://vldcreation:admin@cluster0.6paxf.mongodb.net/${database}`,{ useNewUrlParser: true, useFindAndModify: false, useCreateIndex: true, useUnifiedTopology: true }).then(()=>{ console.log('connection to database established') })
+mongoose.connect(`mongodb+srv://vldcreation:admin@cluster0.6paxf.mongodb.net/${database}`,{ useNewUrlParser: true, useFindAndModify: false, useCreateIndex: true, useUnifiedTopology: true })
+.then(()=>{ console.log('connection to database established') })
 .catch(err=>{ console.log(`db error ${err.message}`); process.exit(-1) })
 autoIncrement.initialize(mongoose.connection)
 
