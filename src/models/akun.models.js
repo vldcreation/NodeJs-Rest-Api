@@ -10,6 +10,10 @@ autoIncrement.initialize(mongoose.connection)
 
 let UserSchema = new mongoose.Schema({
     name : String,
+    google_id: {
+        type: String,
+        require: false,
+    },
     email: {
         type : String,
         require : true,
@@ -19,6 +23,14 @@ let UserSchema = new mongoose.Schema({
         type : String,
         require : true,
         unique : true
+    },
+    no_hp : {
+        type : String,
+        require: false,
+    },
+    ktp:{
+        type: String,
+        rqeuire: true
     },
     password : {
         type : String,
