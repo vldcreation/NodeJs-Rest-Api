@@ -21,7 +21,7 @@ let UserSchema = new mongoose.Schema({
     },
     username : {
         type : String,
-        require : true,
+        require : false,
         unique : true
     },
     no_hp : {
@@ -30,7 +30,7 @@ let UserSchema = new mongoose.Schema({
     },
     ktp:{
         type: String,
-        rqeuire: true
+        require: false
     },
     password : {
         type : String,
